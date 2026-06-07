@@ -10,12 +10,12 @@ La primera versión funcional del sistema permite centralizar, registrar y naveg
 **Modificar vuelo (Modificación):** Permite la búsqueda de un vuelo por su código para alterar cualquiera de sus atributos de forma individual.
 **Informe General (Visualización de datos):** Muestra el listado de la totalidad de los vuelos cargados. Los mismos se presentan ordenados de mayor a menor según la cantidad de pasajeros registrados y, en caso de empate, se ordenan alfabéticamente por su ciudad de destino.
 
-## 👥 Integrantes del Grupo y Roles:
+## Integrantes del Grupo y Roles:
 **Tomas Gadaleta:** Menú de inicio, tipo de ingreso, generación aleatoria y ejecución principal (main).
 **Santino Nasuti:** Funciones de validación de códigos e ingreso manual de datos por consola (destino, horario, pasajeros, peso, estado y tipo).
 **Matias Cross:** Lógica, confirmación y opciones para la eliminación de vuelos del sistema.
 **Moro Bussolini:** Opciones del menú principal, validación de rangos, generación de datos aleatorios y lógica de modificación de atributos.
 **Santiago Molina:** Lógica de ordenamiento (método burbuja doble por pasajeros/destino) e informe de visualización general de datos.
 
-## 🔗 URL del Repositorio
+## URL del Repositorio
 **Repositorio Público:** https://github.com/morobussolini/Skybridge-Airlines-TPO
