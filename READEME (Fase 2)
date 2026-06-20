@@ -1,0 +1,51 @@
+# SkyBridge Airlines - Sistema de Gestión de Logística Aérea
+
+Este proyecto corresponde a la entrega final del Trabajo Práctico Obligatorio para la solución de administración y análisis de operaciones aéreas de SkyBridge Airlines.
+
+El sistema permite centralizar, registrar, modificar y analizar la información de los vuelos y sus catálogos mediante una interfaz interactiva con colores.
+
+## Funcionalidades incluidas en esta entrega:
+
+* **Registrar vuelo (Alta):** Permite la carga de datos de manera manual mediante consola o de forma automatizada con valores aleatorios para facilitar las pruebas.
+* **Eliminar vuelo (Baja):** Permite la eliminación de un vuelo del sistema mediante su código único. Aplica la restricción de que solo se pueden eliminar vuelos que se encuentren en estado "Cancelado" y requiere una doble confirmación del usuario.
+* **Modificar vuelo (Modificación):** Permite buscar un vuelo por su código para alterar cualquiera de sus atributos de forma individual a través de un menú dedicado.
+* **Informe General (Visualización de datos):** Muestra el listado de la totalidad de los vuelos cargados, ordenados de mayor a menor según la cantidad de pasajeros registrados. En caso de empate, se ordenan alfabéticamente por su ciudad de destino.
+* **Administrar Catálogos:** Permite la gestión dinámica (agregar, modificar y eliminar por posición) de las listas de control del sistema: el Catálogo de Aerolíneas y el Catálogo de Destinos.
+* **Reporte de Aerolínea:** Filtra y acumula la cantidad total de vuelos, el total de pasajeros y el peso total de equipaje despachado para una aerolínea específica seleccionada por el usuario.
+* **Reporte de Destinos:** Presenta de forma agrupada los datos acumulados (vuelos, pasajeros y peso) de todos los destinos disponibles, ordenados alfabéticamente utilizando un algoritmo de ordenamiento propio.
+* **Reporte Matricial:** Genera una matriz que cruza las variables de Aerolíneas (filas) y Estados Operativos (columnas) para mostrar la distribución cuantitativa de los vuelos, incluyendo los totales por fila y por columna.
+
+---
+
+## Integrantes del Grupo y Roles:
+
+* **Tomas Gadaleta:**
+    * Diseño y coordinación de los menús (Inicio, Principal, Coordinación de Altas y Administración de Catálogos).
+    * Lógica y flujos para la gestión dinámica de los catálogos de Aerolíneas y Destinos.
+    * Co-diseño de la generación aleatoria de códigos de vuelo únicos y estructura del programa principal (`main`).
+
+* **Santino Nasuti:**
+    * Funciones de validación lógica y de formato básico (enteros, códigos, aeropuertos de origen, destinos, duraciones, pasajeros, pesos y tipos de vuelo).
+    * Funciones de ingreso manual de datos por consola para la creación y configuración exhaustiva de nuevos vuelos.
+
+* **Matias Cross:**
+    * Lógica robusta, confirmación y opciones para la eliminación segura de vuelos cancelados del sistema.
+    * Validación de rangos para las opciones de los menús.
+    * Lógica de construcción, procesamiento y renderizado del **Reporte Matricial** (cruces de datos, totales por filas y totales por columnas).
+
+* **Moro Bussolini:**
+    * Funciones avanzadas y reutilizables para el ingreso de datos (enteros con rango, decimales positivos y strings validados).
+    * Validación algorítmica compleja para formatos decimales (con control de signos y puntos).
+    * Lógica de modificación interactiva de atributos individuales de un vuelo.
+    * Co-diseño de la generación de datos aleatorios y estilización visual de la interfaz empleando `colorama`.
+
+* **Santiago Molina:**
+    * Lógica de ordenamiento principal (método burbuja doble por cantidad de pasajeros y destino alfabético) para el Informe General.
+    * Funciones de búsqueda secuencial en colecciones (búsqueda de vuelos por código, disponibilidad y verificación de existencias en listas).
+    * Algoritmo de ordenamiento alfabético simple para listas de strings.
+    * Diseño y desarrollo de los motores de acumulación de datos para los **Reportes de Aerolínea** y **Reporte de Destinos**.
+
+---
+
+## URL del Repositorio
+**Repositorio Público:** https://github.com/morobussolini/Skybridge-Airlines-TPO
