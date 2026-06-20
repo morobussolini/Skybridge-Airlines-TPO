@@ -56,7 +56,7 @@ def validarFormatoCodigo(codigo):
 
 
 def validarAerolinea(aerolinea, aerolineas):
-    '''Verifica que la aerolinea exista sistema'''
+    '''Verifica que la aerolinea exista en el sistema'''
     # Autor/es principal/es: Santino Nasuti
     
     for i in range(len(aerolineas)):
@@ -65,11 +65,28 @@ def validarAerolinea(aerolinea, aerolineas):
     return False
 
 
+def validarAeropuertoOrigen(aeropuerto, aeropuertos):
+    '''Verifica que el aeropuerto sea valido'''
+    # Autor/es principal/es: Santino Nasuti
+    
+    for i in range(len(aeropuertos)):
+        if aeropuertos[i] == aeropuerto:
+            return True
+    return False
+
+
 def validarDestino(destino):
     '''Verifica que el destino no este vacio'''
     # Autor/es principal/es: Santino Nasuti
     
-    return len(destino.strip()) > 0
+    return len(destino.strip()) > 0 and destino.isalpha()
+
+
+def validarDuracion(duracion):
+    '''Verifica que la duracion estimada del vuelo sea un numero positivo mayor a 0'''
+    # Autor/es principal/es: Santino Nasuti
+
+    return duracion > 0
 
 
 def validarCantidadPasajeros(cantidad):
